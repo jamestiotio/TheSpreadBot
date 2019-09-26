@@ -53,7 +53,7 @@ Other notes:
 
 ## TODO
 
-- Neaten the source code file structure (separate functions by purpose/type).
+- Neaten the source code file structure (separate functions by purpose/type as different modules).
 
 ## Additional Resources
 
