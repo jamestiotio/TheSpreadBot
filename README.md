@@ -45,7 +45,7 @@ Several hidden administrative commands with restricted access are also available
   ]
 ```
 
-Finally, issue a HTTPS request to `https://api.telegram.org/bot<id>:<token>/setWebhook?url=https://<app-name>.herokuapp.com/<id>:<token>` to enable webhook for the bot.
+Finally, issue an HTTPS request to `https://api.telegram.org/bot<id>:<token>/setWebhook?url=https://<app-name>.herokuapp.com/<id>:<token>` to enable the webhook for the bot.
 
 Other notes:
 - Normal port for PostGreSQL is `5432`.
