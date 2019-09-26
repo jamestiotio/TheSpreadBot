@@ -2,13 +2,13 @@
 A Telegram Bot for The Spread with order and payment capabilities for customers of The Spread.
 
 ## Usage
-- /menu to check the menu.
-- /order to place your order.
-- /cart to check your cart.
-- /offers to view available deals.
-- /pay to proceed to payment.
-- /cancel to cancel your order.
-- /terms to read our Terms & Conditions.
+- `/menu` to check the menu.
+- `/order` to place your order.
+- `/cart` to check your cart.
+- `/offers` to view available deals.
+- `/pay` to proceed to payment.
+- `/cancel` to cancel your order.
+- `/terms` to read our Terms & Conditions.
 
 Several hidden administrative commands with restricted access are also available to provide easy management, servicing and maintenance.
 
@@ -51,6 +51,10 @@ Other notes:
 - Normal port for PostGreSQL is `5432`.
 - Initial data was manually converted from SQLite database to Heroku Postgres using the [ESF Database Migration Toolkit](https://www.dbsofts.com/) with the corresponding temporary database credentials provided by Heroku.
 
+## TODO
+
+- Neaten the source code file structure (separate functions by purpose/type).
+
 ## Additional Resources
 
-More about The Spread: https://www.facebook.com/thespread.sg/
+- More about The Spread: https://www.facebook.com/thespread.sg/
