@@ -21,11 +21,11 @@ Several hidden administrative commands with restricted access are also available
 ``` json
 {
   "env": {
-    "ADMIN_LIST": "[<user-id-1>, <user-id-2>, ...]"
-    "BOT_TOKEN": "<id>:<token>"
-    "DATABASE_URL": "postgres://<user>:<password>@<server>:<port>/<database>"
-    "SUPER_ADMIN": "[<user-id-1>, <user-id-2>, ...]"
-    "TZ": "Asia/Singapore"
+    "ADMIN_LIST": "[<user-id-1>, <user-id-2>, ...]",
+    "BOT_TOKEN": "<id>:<token>",
+    "DATABASE_URL": "postgres://<user>:<password>@<server>:<port>/<database>",
+    "SUPER_ADMIN": "[<user-id-1>, <user-id-2>, ...]",
+    "TZ": "Asia/Singapore",
     "WEBHOOK_URL": "https://<app-name>.herokuapp.com/"
   }
 }
