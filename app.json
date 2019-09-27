@@ -1,0 +1,6 @@
+{
+  "name": "The Spread Bot",
+  "description": "A Telegram bot for The Spread",
+  "repository": "https://github.com/jamestiotio/TheSpreadBot",
+  "keywords": ["python-telegram-bot", "postgresql", "heroku"]
+}

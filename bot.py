@@ -736,7 +736,7 @@ def start_payment(bot, update):
                          .format(str(cart_list), str(total_price)),
                          reply_markup=reply_markup)
         # TODO: Implement dynamic QR Code generation function here and send to user
-        bot.send_photo(chat_id=chat_id, photo=open('qr_code.JPG', 'rb'))
+        bot.send_photo(chat_id=chat_id, photo=open('./images/qr_code.JPG', 'rb'))
         bot.send_message(chat_id=chat_id,
                          text='After payment, please take a screenshot '
                               'of your receipt/successful payment page '

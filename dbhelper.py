@@ -148,6 +148,6 @@ class DBHelper:
         return [x for x in self.cursor.fetchall()]
 
     def purge_order_list(self):
-        stmt = "DELETE from order_list;"
+        stmt = "DELETE FROM order_list;"
         self.cursor.execute(stmt)
         self.conn.commit()

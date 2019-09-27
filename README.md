@@ -1,6 +1,8 @@
 # The Spread Bot
 A Telegram Bot for The Spread with order and payment capabilities for customers of The Spread.
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/jamestiotio/TheSpreadBot)
+
 ## Usage
 - `/menu` to check the menu.
 - `/order` to place your order.
@@ -17,38 +19,25 @@ Several hidden administrative commands with restricted access are also available
 **Heroku App Config Vars:**
 
 ``` json
-  [
-  {
-    "key": "ADMIN_LIST",
-    "value": "[<user-id-1>, <user-id-2>, ...]"
-  },
-  {
-    "key": "BOT_TOKEN",
-    "value": "<id>:<token>"
-  },
-  {
-    "key": "DATABASE_URL",
-    "value": "postgres://<user>:<password>@<server>:<port>/<database>"
-  },
-  {
-    "key": "SUPER_ADMIN",
-    "value": "[<user-id-1>, <user-id-2>, ...]"
-  },
-  {
-    "key": "TZ",
-    "value": "Asia/Singapore"
-  },
-  {
-    "key": "WEBHOOK_URL",
-    "value": "https://<app-name>.herokuapp.com/"
+{
+  "env": {
+    "ADMIN_LIST": "[<user-id-1>, <user-id-2>, ...]"
+    "BOT_TOKEN": "<id>:<token>"
+    "DATABASE_URL": "postgres://<user>:<password>@<server>:<port>/<database>"
+    "SUPER_ADMIN": "[<user-id-1>, <user-id-2>, ...]"
+    "TZ": "Asia/Singapore"
+    "WEBHOOK_URL": "https://<app-name>.herokuapp.com/"
   }
-  ]
+}
 ```
 
 Finally, issue an HTTPS request to `https://api.telegram.org/bot<id>:<token>/setWebhook?url=https://<app-name>.herokuapp.com/<id>:<token>` to enable the webhook for the bot.
 
-Other notes:
-- Normal port for PostGreSQL is `5432`.
+## PostgreSQL Database ER Diagram
+
+![pgsql-er-diagram](./images/thespreadbot_pgdb_schematics.png)
+
+- Normal port for PostgreSQL is `5432`.
 - Initial data was manually converted from SQLite database to Heroku Postgres using the [ESF Database Migration Toolkit](https://www.dbsofts.com/) with the corresponding temporary database credentials provided by Heroku.
 
 ## TODO
