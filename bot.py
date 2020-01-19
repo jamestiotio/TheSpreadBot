@@ -281,7 +281,10 @@ def terms(bot, update):
                           'official bot and is only used for ordering '
                           'purposes. Only The Spread and the customer can '
                           'access these confidential information.\r\n\r\n'
-                          '8. All information is correct at time of print.',
+                          '8. Payment made to DBS PayLah! through this bot is '
+                          'final, non-negotiable and non-refundable, except for '
+                          'very special cases at The Spread\'s discretion.\r\n\r\n'
+                          '9. All information is correct at time of print.',
                      reply_markup=reply_markup)
 
 

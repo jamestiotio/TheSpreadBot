@@ -31,6 +31,8 @@ Several hidden administrative commands with restricted access are also available
 }
 ```
 
+In Heroku, spin up a regular `web` Dyno running the command `python3 bot.py` and attach a `Heroku Postgres` add-on as `DATABASE`.
+
 Finally, issue an HTTPS request to `https://api.telegram.org/bot<id>:<token>/setWebhook?url=https://<app-name>.herokuapp.com/<id>:<token>` to enable the webhook for the bot.
 
 ## PostgreSQL Database ER Diagram
@@ -46,4 +48,4 @@ Finally, issue an HTTPS request to `https://api.telegram.org/bot<id>:<token>/set
 
 ## Additional Resources
 
-- More about The Spread: https://www.facebook.com/thespread.sg/
+- More information about The Spread: https://www.facebook.com/thespread.sg/
